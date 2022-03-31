@@ -1,0 +1,22 @@
+
+- Ao apresentar a janela de diálogo de erro mostrando qual arquivo da playlist não
+foi encontrado, a função nextTrack() é chamada; mas quando a janela de erro é 
+fechada, essa mesma função é chamada novamente, interrompendo a execução atual.
+
+- Em arquivos de áudio de duração muito curta ( < 10 seg) ocorre geralmente um bug ao
+tentar utilizar o slider de tempo. Quando ele é movido, retorna para o valor 0 enquando a
+barra de progresso se mantem no valor correto.
+
+- Erro de sincronia entre o slider de tempo e a barra de progresso em arquivos de áudio 
+de curta duração.
+
+- Ao pressionar o botão Next ou usar seu respectivo atalho enquanto a execução atual está pausada, 
+esta sai do modo de pausa.
+
+- Sistema para visualização de duração de execução muito precário
+
+- Implementar a opção "Repeat Track"
+
+- Aumentar a área visível da playlist e dos componentes próximos
+
+- Procurar implementar um leitor de tags ID3 para arquivos de áudio

@@ -1,0 +1,109 @@
+Helll Player vX.Yz
+
+Botões Principais:
+
+Play/Pause = Pausa ou Reproduz a faixa atual
+Stop = Para a execução da faixa atual
+Next = Se houver outra música depois da faixa atual na lista de reprdução, irá tentar reproduzí-la
+Previous = Se houver outra música antes da faixa atual na lista de reprdução, irá tentar reproduzí-la
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Chaves de Ajuste:
+
+Volume = Modifica o valor do volume de acordo com a posição da  chave
+Play Speed = Modifica o valor da velocidade de execução e da tonalidade da faixa atual
+
+- Botões de parâmetro Liga/Desliga das chaves:
+
+Keep Volume = Mantem o volume atual para ser usado pela próxima faixa. Se não estiver selecionado, a faixa seguinte
+será executada com o valor de volume padrão. (65%)
+
+Keep PB Speed = Mantem a velocidade de execução atual para ser usada pela próxima faixa. Se não estiver selecionado, 
+a faixa seguinte será executada com o valor da velocidade de execução padrão. (100%)
+
+Keep Effects On = Por padrão os efeitos são desligados quando é iniciada uma nova faixa. Se este botão estiver selecionado,
+os efeitos ativos continuarão ligados e agirão na próxima faixa.
+
+Repeat = Faz com que a música atual se repita até que o botão seja deselecionado. (Função Ainda Não Disponível na
+versão 5.13a do Helll Player)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Botões dos Efeitos:
+
+On/Off = Liga ou Desliga o efeito 
+
+Botões circulares = Modificam (em tempo real, caso o efeito esteja ativo) os parametros do efeito
+
+Disable All Effects = Desativa todos os efeitos ligados no momento
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Botões da Lista de Reprodução (PlayList)
+
+Add Files to Play = Abre uma janela para carregar arquivos de áudio para serem executados na PlayList.
+
+Delete Track(s) = Deleta as faixas selecionadas na PlayList. (o Helll Player carrega os arquivos inteiros, um por um na 
+lista de reprodução. Isso gera a necessidade de se clicar mais de uma vez no botão "Delete Tracks" para que um
+determinado grupo de faixas selecionadas seja excluido)
+
+Load PlayList = Abre uma janela para carregar um arquivo de lista de reprodução do Helll Player (*.hpl)
+
+Save PlayList = Copia todas as faixas inseridas na lista de reprodução para um arquivo *.hpl e abre uma janela para 
+escolher o nome do arquivo e onde salvá-lo. Arquivos *.hpl podem ser recarregados pelo Helll Player, readicionando
+todas as faixas presentes no arquivo, devolta na PlayList.
+
+- Botões de parâmetro Liga/Desliga da PlayList
+
+Random Playing = Ativa o modo de execução aleatório. Caso o botão "Next" ou "Previous" seja precinado durante este modo,
+será executada uma faixa escolhida aleatóriamente, dentro dos limites da PlayList.
+
+Invert Play Seq. = Inverte a ordem de execução normal. (Só terá efeito caso "Random Playing" esteja desativado).
+Faz com que, ao terminar a execução da faixa atual, seja executada a faixa anterior ao invés da próxima.
+
+Start Track Paused = Faz com que cada faixa que for sendo executada, seja iniciada no modo Pause, sendo necessário 
+pressionar o botão Play/Pause para iniciar sua execução. (Não afeta faixas iniciadas pelos botões "Next" e "Previous")
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Notas e Prevenção de Erros
+
+- Caso um arquivo de música da lista de reprodução não possa ser encontrado ou carregado no momento de sua execução,
+é mostrado um aviso na tela informando a ocorrencia do erro, e qual o arquivo com problemas. (Para acabar com as 
+notificações de erro, basta excluir o arquivo da PlayList)
+
+- O programa é iniciado com dependência total desses arquivos:
+
+- ikpFlac.dll
+- irrKlang.dll
+- ikpMP3.dll
+- libgcc_s_dw2-1.dll
+- QtCore4.dll
+- QtGui4.dll
+- mingwm10.dll
+- default.wav
+- chaos_realm.jpeg
+
+Caso algum desses arquivos esteja ausente no momento da execução do Helll Player, este poderá apresentar erros e 
+acabar tendo de ser fechado.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Teclas de Atalho
+
+O Helll Player possui teclas de atalho para que o usuário possa mudar a faixa atual, ativar ou desativar o modo aleatório, 
+executar, pausar ou parar a faixa atual. Estes atalhos podem ser executados mesmo fora do Helll Player e/ou mesmo 
+quando este está minimizado.
+
+Segue as sequencias:
+
+END + N  = Próxima Faixa
+END + M = Faixa Anterior
+END + P = Pausar/Executar Faixa Atual
+END + R = Ativar/Desativar Modo de Execução Aleatória
+END + S = Parar aexecução da faixa atual
+
+OBS: Justamente pelo fato desses atalhos surtirem efeito mesmo se executados fora da janela do Helll Player, não é 
+recomendado o uso destes durante o uso de programas de edição de texto ou qualquer outro que utilize a tecla END
+ou as combinações acima, pois podem executar ações indesejadas nesses programas.

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Helll Player" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\Helll Player" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\Helll Player" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:\Qt\4.8.1\include" />
+			<Add directory="C:\Qt\4.8.1\include\QtGui" />
+			<Add directory="C:\JeffSturmann\Engines\id3lib-3.8.3\include" />
+			<Add directory="C:\JeffSturmann\Engines\id3lib-3.8.3\include\id3" />
+			<Add directory="C:\JeffSturmann\Engines\hyperic-sigar-1.6.4\sigar-bin\include" />
+		</Compiler>
+		<Linker>
+			<Add library="QtCore4" />
+			<Add library="QtGui4" />
+			<Add library="C:\JeffSturmann\Engines\irrKlang-1.3.0b\lib\Win32-gcc\libirrKlang.a" />
+			<Add library="C:\JeffSturmann\Engines\id3lib-3.8.3\lib\Release\libid3lib.a" />
+			<Add library="C:\JeffSturmann\Engines\id3lib-3.8.3\zlib\prj\Release\libzlib.a" />
+			<Add library="C:\JeffSturmann\Engines\hyperic-sigar-1.6.4\sigar-bin\lib\sigar-x86-winnt.lib" />
+			<Add directory="C:\Qt\4.8.1\lib" />
+		</Linker>
+		<Unit filename="HelllMain.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="moc_HelllMain.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
